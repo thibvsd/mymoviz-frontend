@@ -50,7 +50,7 @@ function Home() {
   const [movieState, setMovieState] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/movies')
+    fetch('https://mymoviz-backend-ecru.vercel.app/movies')
       .then(response => response.json())
       .then(data => {
         setMovieState(data.movies.results)
